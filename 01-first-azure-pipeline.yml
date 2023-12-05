@@ -12,7 +12,7 @@ pool:
 # Pipelines > Stages > Jobs > Tasks(Steps)
 
 jobs:
-- job: job1
+- job: Job1
   steps:
   - script: echo Job1 - Hello, world changed again!
     displayName: 'Run a one-line script'
@@ -22,7 +22,15 @@ jobs:
       echo See https://aka.ms/yaml
       echo more information
     displayName: 'Run a multi-line script'
-- job: job2
+
+- job: Job2
+  dependsOn: Job1
   steps:
   - script: echo Job2!
+    displayName: 'Run a one-line script'
+
+- job: Job3
+  dependsOn: Job2
+  steps:
+  - script: echo Job3!
     displayName: 'Run a one-line script'
