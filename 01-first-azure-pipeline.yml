@@ -14,7 +14,7 @@ pool:
 jobs:
 - job: Job1
   steps:
-  - script: echo Job1 - Hello, world changed again!
+  - script: echo Job1 - Hello, world changed again on 14thDecember2023!
     displayName: 'Run a one-line script'
 
   - script: |
