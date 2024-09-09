@@ -23,7 +23,7 @@ steps:
     ensureBackend: true
     backendAzureRmResourceGroupName: 'terraform-backend-rg'
     backendAzureRmResourceGroupLocation: 'westeurope'
-    backendAzureRmStorageAccountName: 'storageacctmath'
-    backendAzureRmContainerName: 'storageacctcontainer'
+    backendAzureRmStorageAccountName: 'storageacctenjoymath'
+    backendAzureRmContainerName: 'storageacctmathcontainer'
     backendAzureRmKey: 'kubernetes-dev.tfstate'
     allowTelemetryCollection: true
