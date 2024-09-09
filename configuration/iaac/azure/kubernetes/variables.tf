@@ -14,7 +14,6 @@ variable node_count {
   default = 3
 }
 
-
 variable dns_prefix {
   default = "k8stest"
 }
