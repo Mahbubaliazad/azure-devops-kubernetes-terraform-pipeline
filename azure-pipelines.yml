@@ -12,7 +12,7 @@ pool:
   vmImage: $(imageName)
 
 steps:
-- script: echo K8S Terraform Azure on 10th Sept24!
+- script: echo K8S Terraform Azure on 10th-Sept-24!
   displayName: 'Run a one-line script'
 
 - task: DownloadSecureFile@1
