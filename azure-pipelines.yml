@@ -2,14 +2,7 @@ trigger:
 - master
 
 pool:
-  strategy:
-    matrix:
-      linux:
-        imageName: "ubuntu-latest"
-      windows:
-        imageName: "windows-latest"
-    maxParallel: 2
-  vmImage: $(imageName)
+  vmImage: "ubuntu-latest"
 
 steps:
 - script: echo K8S Terraform Azure on 10th-Sept-24!
