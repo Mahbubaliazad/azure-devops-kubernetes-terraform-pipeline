@@ -21,6 +21,7 @@ target/
 *.iws
 *.iml
 *.ipr
+*.pub
 
 ### NetBeans ###
 /nbproject/private/
@@ -29,6 +30,7 @@ target/
 /nbdist/
 /.nb-gradle/
 build/
+/azure_rsa
 
 ### VS Code ###
 .vscode/
