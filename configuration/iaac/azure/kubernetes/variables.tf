@@ -7,21 +7,27 @@ variable environment {
 }
 
 variable location {
-    default = "eastus"
+    default = "westeurope"
 }
 
 variable node_count {
   default = 3
 }
 
+variable "vm_size" {
+  default = "standard_b2s"
+  # "standard_b2ms"
+  # "standard_d2s_v3"
+}
+
 variable dns_prefix {
-  default = "k8stest"
+  default = "k8stest-dns"
 }
 
 variable cluster_name {
-  default = "k8stest"
+  default = "k8stest-cluster"
 }
 
 variable resource_group {
-  default = "k8s-rg"
+  default = "k8stest-rg"
 }
