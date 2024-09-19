@@ -15,7 +15,7 @@ variable node_count {
 }
 
 variable "vm_size" {
-  default = "standard_b2s"
+  default = "standard_d2s_v3"
   # "standard_b2ms"
   # "standard_d2s_v3"
 }
