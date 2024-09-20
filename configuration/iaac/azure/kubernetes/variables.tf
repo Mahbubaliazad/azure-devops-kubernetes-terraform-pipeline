@@ -7,11 +7,11 @@ variable environment {
 }
 
 variable location {
-    default = "westeurope"
+    default = "eastus"
 }
 
 variable node_count {
-  default = 2
+  default = 1
 }
 
 variable "vm_size" {
