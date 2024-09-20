@@ -6,7 +6,7 @@ pool:
 
 steps:
 - script: echo K8S Terraform Azure 2nd!
-  displayName: 'Run a one-line script'
+  displayName: 'Run a one-line script today 20th Sept 2024'
 
 - task: DownloadSecureFile@1
   name: publickey 
@@ -26,7 +26,6 @@ steps:
     backendAzureRmStorageAccountName: 'storageaccrangamath'
     backendAzureRmContainerName: 'storageaccrangacontainer'
     backendAzureRmKey: 'kubernetes-dev.tfstate'
-    allowTelemetryCollection: true
 
 - task: TerraformCLI@2
   inputs:
@@ -34,5 +33,5 @@ steps:
     workingDirectory: '$(System.DefaultWorkingDirectory)/configuration/iaac/azure/kubernetes'
     environmentServiceName: 'azure-resource-manager-service-connection'
     commandOptions: '-var client_id=$(client_id) -var client_secret=$(client_secret) -var ssh_public_key=$(publickey.secureFilePath)'
-    allowTelemetryCollection: true
+
 
