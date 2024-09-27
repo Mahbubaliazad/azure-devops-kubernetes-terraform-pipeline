@@ -7,7 +7,7 @@ variable environment {
 }
 
 variable location {
-    default = "eastus"
+    default = "centralus"
 }
 
 variable node_count {
@@ -15,7 +15,8 @@ variable node_count {
 }
 
 variable "vm_size" {
-  default = "standard_b2ps_v2"
+  default = "standard_ds2_v2"
+  # standard_b2ps_v2
   # "standard_b2ms"
   # "standard_D2s_v3"
 }
