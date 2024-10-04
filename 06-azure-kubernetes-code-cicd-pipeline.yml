@@ -5,8 +5,9 @@ resources:
 - repo: self
 
 variables:
-  tag: 23
-  # '$(Build.BuildId)'
+  tag: 58
+  
+# '$(Build.BuildId)'
 
 # Stage 1
 # Build Docker Image
