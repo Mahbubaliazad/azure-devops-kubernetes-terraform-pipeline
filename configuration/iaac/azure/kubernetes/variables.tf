@@ -11,7 +11,7 @@ variable location {
 }
 
 variable node_count {
-  default = 2
+  default = 3
 }
 
 variable "vm_size" {
